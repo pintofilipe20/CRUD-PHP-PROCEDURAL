@@ -1,0 +1,309 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    border:none;
+    font-weight: 300;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+body{
+    background-color: #ccc;
+}
+ul{
+    list-style: none;
+}
+i{
+    cursor: pointer;
+}
+li{
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background: #f4f4f4;
+}
+.tudo{
+  width: 100%;
+  float: left;
+  padding: 4%;
+  background-color: #fff;
+  padding-bottom: 35%;
+
+}
+h3{
+    width: 100%;
+    float: left;
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.6em;
+    padding: 2%;
+    border-bottom: 1px solid #ddd;
+   
+    margin-bottom: 40px;
+}
+
+.texto{
+  width: 100%;
+  float: left;
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+/*PADRONIZAÇÃO DO FORMULÁRIOS*/
+form{
+  background-color: #ffffff;
+  margin: 1px auto;
+  padding: 40px;
+  width: 90%;
+}
+form input[type="submit"]{
+    width: 20%;
+    loat: left;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    clear: both;
+    margin-bottom: 50px;
+    }
+ input[type=submit]:hover {
+    background-color: #45a049;
+}
+ form p{
+  width: 48%;
+    float: left;
+    margin-left: 1%;
+}
+form label{
+ width: 100%;
+  float: left;
+  font-size: 20px;
+  font-size: 1.2em;
+    
+}
+form input[type=text], select, textarea{
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+     border-radius: 4px; 
+     box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
+    
+}
+form input[type="file"]{
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+     border-radius: 4px; 
+     box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
+   
+}
+
+/*PADRONIZAÇÃO DA TABELA*/
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  float: left;
+   margin-bottom: 10%;
+  border-bottom:1px solid #ccc;
+}
+th{
+  text-align: center;
+  padding: 6px;
+ 
+  box-sizing: border-box;
+}
+ table thead{
+    background:#3783b5;
+    font-size:1.1em;
+    color:#fff;
+  
+}
+table tbody{
+    font-size:1em;
+    cursor: pointer;
+    
+}
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+table tbody tr{
+  line-height: 2;
+  background: #fff;
+  color: #5e6467;   
+}
+table tbody tr:hover{
+    background: #dbdfe4;
+}
+table .fa-file{
+    color: #3783b5;
+}
+table .fa-edit{
+    color: #3783b5;
+}
+
+table .fa-remove{
+    color: red;
+    font-size: 1.2em;
+    
+}
+/*ALERTAS*/
+.sucesso{
+   
+        width: 80%;
+        margin-left: 10%;
+        float: left;
+        background-color: #d8ffd5;
+        padding: 1.6%;
+        text-align: center;
+        margin-bottom: 20px;;
+        border:1px solid #00ff0d;
+}
+.eliminarcarro{
+    color: #6f1212;
+    background-color: #f7d3d3;
+    border-color: #f3c1c1;
+
+}
+.sucesso i{
+    float: right;
+    font-size: 1.1em;
+}
+.eliminarcarro{
+    color: #6f1212;
+    background-color: #f7d3d3;
+    border-color: #f3c1c1;
+
+}
+/*Eliminar carro*/
+.eliminarcarros{
+    height: 100%;
+   width: 100%;
+   position: fixed;
+   background-color: rgba(0,0,0,.2);
+   top:0;
+   left: 0px;
+    transition:  3s;
+   transition: all 1s ease-in-out;
+   z-index: 99;  
+}
+.AdCarro{
+  width: 150px;
+  height: 46px;
+  position: fixed;
+  top: 90%;
+  background-color: #3783b5;
+  left: 86%;
+  list-style-type: none;
+  text-align: center;
+  padding: .8%;
+  font-size: 1.3em;
+  color: #fff;
+  border-radius: 5px;
+}
+.AdicionarCarro{
+  height: 100%;
+   width: 100%;
+   position: fixed;
+   background-color: rgba(0,0,0,.2);
+   top:0;
+   left: 0px;
+  transition:  3s;
+   transition: all 1s ease-in-out;
+   z-index: 99; 
+   display: none;
+}
+.AdicionarCarro form{
+  width: 40%;
+  margin-top: 10%;
+}
+.AdicionarCarro h5{
+  width: 100%;
+  float: left;
+  padding: 3%;
+  background-color: #3783b5;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+/*MODAL DE ALERTA PARA ELIMINAR CARRO*/
+.alertacarro{
+   width:30%;
+   margin-left: 35%;
+  margin-top: 17%;
+   background: #fff;
+   float: left;
+   border-radius: 4px;
+}
+.alertacarro h3{
+    width: 100%;
+    float: left;
+    padding: 10px;
+    background-color: #0ea1d2;
+    color:#fff;
+}
+.alertacarro p{
+   width: 100%;
+   float: left;
+   margin-bottom: 10px;
+   font-size: 1.2em;
+   text-align: center;
+  color: #181818;
+   opacity: .9;   
+}
+.alertacarro span{
+    width: 30%;
+    margin-bottom: 20px;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    cursor:pointer;
+    margin-left: 10%;
+   
+}
+#fechar{
+  cursor: pointer;
+  color: red;
+  float: right;
+}
+.alertacarro a{
+    width: 30%;
+    margin-bottom: 20px;
+   margin-left: 10%;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    background-color: rgb(22, 68, 153);
+    cursor:pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.alertacarro a:hover{
+    background-color: rgb(11, 46, 105);
+    transition: 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
